@@ -67,6 +67,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Car.html" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>

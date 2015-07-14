@@ -1,22 +1,18 @@
-﻿class Car{
-
-    engine: string 
-
-    constructor(engine: string) {
+var Car = (function () {
+    function Car(engine) {
         this.engine = engine;
     }
-
-    start() {
+    Car.prototype.start = function () {
         alert('Engine started: ' + this.engine);
-    }
-
-    stop() {
+    };
+    Car.prototype.stop = function () {
         alert('Engine Stopped: ' + this.engine);
-    }
-}
-
+    };
+    return Car;
+})();
 window.onload = function () {
     var car = new Car('v8');
     car.start();
     car.stop();
 };
+//# sourceMappingURL=Car.js.map
